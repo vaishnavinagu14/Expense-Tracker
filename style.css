@@ -1,0 +1,142 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4a4a4a;
+}
+
+.balance-card {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#balance {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #2e86de;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f7f9fa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.income, .expense {
+  flex: 1;
+  text-align: center;
+}
+
+.plus {
+  color: #2ecc71;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.minus {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Form styles */
+form {
+  margin-top: 1.5rem;
+}
+
+form h3 {
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2e86de;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #1b4f72;
+}
+
+/* Transaction list */
+.list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.list li {
+  background: #f9f9f9;
+  border-left: 5px solid;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list li.plus {
+  border-color: #2ecc71;
+}
+
+.list li.minus {
+  border-color: #e74c3c;
+}
+
+.list li button {
+  background: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+/* Chart */
+#expense-chart {
+  margin-top: 2rem;
+  max-width: 100%;
+}
